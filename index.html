@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - Стипендия</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <div class="auth-switcher">
+            <button class="active" id="loginBtn">Вход</button>
+            <button id="registerBtn">Регистрация</button>
+        </div>
+        
+        <form id="loginForm" class="auth-form active">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+
+        <form id="registerForm" class="auth-form">
+            <input type="text" placeholder="ФИО" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
