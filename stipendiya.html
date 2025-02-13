@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стипендия</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="main.html" class="logo">ВУЗ</a>
+        <div class="nav-links">
+            <a href="main.html">Главная</a>
+            <a href="stipendiya.html">Стипендия</a>
+            <a href="index.html">Выйти</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="welcome-section">
+            <h1>Добрый день, Иван</h1>
+            <div class="balance-card">
+                <div class="balance-info">
+                    <h3>Текущий баланс</h3>
+                    <p class="amount">12 500 ₽</p>
+                    <div class="details">
+                        <p>Вид стипендии: Академическая</p>
+                        <p>Привязанная карта: **** 4456</p>
+                    </div>
+                </div>
+                <button class="withdraw-btn">Вывести</button>
+            </div>
+        </div>
+    </main>
+    <!-- JS Внутри кода потому что внешний отказывается работать -->
+    <script>
+    document.querySelector('.withdraw-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('Выведено успешно!');
+    });
+    </script>
+</body>
+</html>
